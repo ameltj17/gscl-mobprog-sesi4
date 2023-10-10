@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79sp"
+
+        android:text="AplikasiCobaCoba."
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/dark_grey"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+
+        android:text="lorem ipsum lorem ipsum."
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:src="@drawable/pic1"
+        android:layout_below="@id/desc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/usernameTextBox"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+
+        android:hint="Username"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/passTextBox"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+
+        android:hint="Password"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/forgotPassBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passTextBox"
+        android:layout_alignLeft="@id/passTextBox"
+        android:textAlignment="textStart"
+        android:layout_marginTop="-8dp"
+        android:paddingLeft="2dp"
+
+        android:text="Forgot Password?"
+        android:textColor="@color/dark_grey"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:id="@+id/toGridBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgotPassBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:text="Switch To Grid"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
